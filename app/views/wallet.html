@@ -1,0 +1,45 @@
+<div id="container">
+    <div class="navbar">
+        <div class="text-center">
+            <h3>wymiana walut</h3>
+            <h4>STAN PORTFELA</h4>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">AKTUALNY STAN</div>
+        <table class="table" id="table">
+            <thead>
+            <tr>
+                <td>WALUTA:</td>
+                <td>STAN:</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="country">
+                         <span class="image-country-wrap">
+                            <img class="flags-country" src="../img/flags/PLN.svg" alt="">
+                         </span>
+                        <span class="shortcut-country">PLN</span>
+                    </div>
+                </td>
+                <td data-name="pValue"><span class="wallet-value">{{walletCtrl.listCurrencies('PLN')| number:2}}</span> </td>
+            </tr>
+            <tr ng-repeat="currency in walletCtrl.currencies">
+                <td>
+                    <div class="country">
+                    <span class="image-country-wrap">
+                        <img class="flags-country" ng-src="../img/flags/{{currency}}.svg" alt="">
+                    </span>
+                        <span class="shortcut-country">{{currency}}</span>
+                    </div>
+                </td>
+                <td><span class="wallet-value">{{walletCtrl.listCurrencies(currency)| number:2}}</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="#/" class="btn-danger btn-back glyphicon glyphicon-arrow-left"></a>
+
+</div>

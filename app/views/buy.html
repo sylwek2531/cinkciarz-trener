@@ -1,0 +1,59 @@
+<div id="container">
+    <div class="navbar">
+        <div class="text-center">
+            <h3>Wymiana walut</h3>
+            <h4>KUP</h4>
+        </div>
+    </div>
+    <div class="buy-sell-other-currency">
+
+        <div class="country-currency">
+                 <span class="image-country-wrap">
+                    <img class="flags-country" src="../img/flags/PLN.svg" alt="">
+                </span>
+            <span class="shortcut-country">PLN</span>
+        </div>
+
+        <div class="inp-group"><input ng-disabled="actionCtrl.chosenCureency" type="number" min="0" class="form-control input-value"
+                                      ng-model="actionCtrl.value"
+                                      ng-change="actionCtrl.changeInput('buy')" placeholder="Wpisz kwotę">
+        </div>
+    </div>
+    <div class="select-wrap">
+        <ui-select ng-model="currency"  ng-change="actionCtrl.selectChange(currency); actionCtrl.value = 0; actionCtrl.spanBuy = 0 " theme="bootstrap">
+            <ui-select-match placeholder="waluta">
+                <div class="country-currency chosen">
+                             <span class="image-country-wrap">
+                                    <img class="flags-country" ng-src="../img/flags/{{currency}}.svg" alt="">
+                             </span>
+                    <span class="shortcut-country">{{currency}}</span>
+
+                </div>
+            </ui-select-match>
+
+            <ui-select-choices repeat="currency in actionCtrl.listCurrencies | filter: $select.search">
+                <div class="country-currency">
+                             <span class="image-country-wrap">
+                                    <img class="flags-country" ng-src="../img/flags/{{currency}}.svg" alt="">
+                             </span>
+                    <span class="shortcut-country">{{currency}}</span>
+
+                </div>
+            </ui-select-choices>
+        </ui-select>
+
+        <div class="actual-course">{{actionCtrl.response.data.rates[0].ask | number:2}}</div>
+        <div ng-show="actionCtrl.chosenCureency" class="actual-course">wybierz walutę</div>
+
+    </div>
+    <div class="hold-wrapper">
+        <span class="text">kupno</span>
+        <span class="buy-value">{{actionCtrl.spanBuy}}</span>
+    </div>
+    <div class="button-action">
+        <a href="#/" class="btn-danger btn-back glyphicon glyphicon-arrow-left"></a>
+
+        <input type="button" class="btn-success accept" value="zatwierdz" ng-click="actionCtrl.accept('buy')">
+    </div>
+    <div class="alert hide" role="alert"></div>
+</div>

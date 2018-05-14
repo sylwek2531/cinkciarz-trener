@@ -1,0 +1,53 @@
+{
+  "name": "cinkciarz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt verify --force",
+    "e2e": "./node_modules/.bin/protractor test/protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylwek2531/cinkciarz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylwek2531/cinkciarz/issues"
+  },
+  "homepage": "https://github.com/sylwek2531/cinkciarz#readme",
+  "devDependencies": {
+    "bluebird": "2.9.34",
+    "chai": "1.9.2",
+    "chai-as-promised": "4.1.1",
+    "connect-livereload": "0.5.2",
+    "connect-modrewrite": "0.9.0",
+    "cucumber": "0.4.4",
+    "grunt": "1.0.1",
+    "grunt-cli": "0.1.13",
+    "grunt-connect-proxy": "0.2",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "0.11.3",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-gh-pages": "2.0.0",
+    "grunt-karma": "0.10.1",
+    "jasmine-core": "2.1.0",
+    "karma": "0.12.24",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-cli": "0.0.4",
+    "karma-coverage": "1.1.1",
+    "karma-jasmine": "0.3.8",
+    "karma-ng-html2js-preprocessor": "0.1.2",
+    "karma-phantomjs-launcher": "1.0.2",
+    "karma-spec-reporter": "0.0.26",
+    "load-grunt-tasks": "3.0.0",
+    "pg": "4.4.3",
+    "protractor": "2.5.1",
+    "serve-static": "1.11.1"
+  },
+  "dependencies": {
+    "express": "4.14.1",
+    "http-proxy-middleware": "0.17.3"
+  }
+}

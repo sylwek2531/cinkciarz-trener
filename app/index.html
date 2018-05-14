@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trener cinkciarza</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css">
+    <link rel="stylesheet" href="style/me.css">
+    <link rel="stylesheet" href="style/btn.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <base href="/">
+</head>
+<body ng-app="app">
+<div ng-view>
+</div>
+
+<!-- default js-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/ngstorage/ngStorage.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-ui-select/dist/select.js"></script>
+<!-- app js-->
+<script src="app.js"></script>
+<script src="app.config.js"></script>
+<!-- service-->
+<script src="js/service/exchangeRate.service.js"></script>
+<script src="js/service/localstorege.service.js"></script>
+<!--controllers-->
+<script src="js/controllers/main.controller.js"></script>
+<script src="js/controllers/wallet.controller.js"></script>
+<script src="js/controllers/exchange.controller.js"></script>
+<script src="js/controllers/action-currency.controller.js"></script>
+
+</body>
+</html>
+
+

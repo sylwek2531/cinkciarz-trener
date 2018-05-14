@@ -1,0 +1,37 @@
+<div id="container">
+    <div class="navbar">
+        <div class="text-center">
+            <h3>wymiana walut</h3>
+            <h4>KURS WALUT</h4>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <table class="table table-hover">
+            <thead>
+            <tr class="success">
+                <td>Waluta</td>
+                <td>Sprzedaż</td>
+                <td>Kupno</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="currency in exchangeCtrl.currencies">
+                <td>
+                    <div class="country">
+                    <span class="image-country-wrap">
+                        <img class="flags-country" ng-src="../img/flags/{{currency.data.code}}.svg" alt="">
+                    </span>
+                        <span class="shortcut-country">{{currency.data.code}}</span>
+                    </div>
+                </td>
+                <td><span class="currency-value">{{currency.data.rates[0].ask}}</span></td>
+                <td><span class="currency-value">{{currency.data.rates[0].bid}}</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="#/" class="btn-danger btn-back glyphicon glyphicon-arrow-left"></a>
+</div>
+
+
+
