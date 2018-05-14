@@ -1,0 +1,296 @@
+body, html {
+    font-family: 'Bungee Inline', cursive;
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    padding: 10px;
+    border: 1px solid;
+    margin: 0 auto;
+    width: 400px;
+    max-width: 100%;
+    min-height: 500px;
+}
+
+.main-accept {
+    margin-top: -10px;
+    font-size: 19px;
+    border-radius: 5px;
+    height: 40px;
+    width: 190px;
+}
+
+.main-button-menu a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+
+}
+
+.accept {
+    margin-left: 22%;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 220px;
+
+}
+
+.panel-heading, table {
+    text-align: center;
+    font-size: 16px;
+}
+
+.table tr td .country {
+    display: flex;
+    justify-content: center;
+}
+
+.wallet-value, .currency-value {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+a.glyphicon {
+    text-decoration: none;
+    color: black;
+}
+
+a.glyphicon:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.image-country-wrap {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .2);
+    position: relative;
+
+}
+
+.flags-country {
+    border-radius: 50%;
+    max-width: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.country-currency {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-right: none;
+}
+
+.shortcut-country {
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 34px;
+}
+
+.buy-sell-other-currency {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inp-group {
+    width: 100%;
+}
+
+.input-value {
+    border: 1px solid;
+    border-radius: 0 4px 4px 0;
+    height: 50px;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.select-currency {
+    border-radius: 4px 0 0 4px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    height: 100%;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.select-wrap, .hold-wrapper, .sell-option {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 0;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.hold-wrapper {
+    padding: 0 10px;
+}
+
+.actual-course, .buy-value, .text {
+    font-size: 20px;
+}
+
+.sell-option .country-currency {
+    border: 0;
+}
+
+.sale-wrap {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.button-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-back {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-back:before {
+    color: #fff;
+}
+
+input[type=button][disabled] {
+    background-color: rgba(92, 184, 92, .5);
+}
+
+input[type=button][disabled]:hover {
+    background-color: rgba(92, 184, 92, .5);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.alert {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hide {
+    border: none;
+    padding: 0;
+}
+
+.select-wrap {
+    position: relative;
+}
+
+.select-wrap {
+    justify-content: flex-end;
+}
+
+.sale-wrap .inp-group {
+    width: calc(100% - 105.61px);
+}
+
+.sale-wrap .inp-group, .sale-wrap .inp-group input, .buy-sell-other-currency .inp-group input {
+    text-align: right;
+}
+
+/*ui select style*/
+.ui-select-choices-row-inner .country-currency {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+
+.ui-select-container .form-control {
+    height: 50px;
+    max-width: 107.61px;
+    min-width: 107.61px;
+    padding: 6px 10px;
+    border-radius: 4px 0 0 4px;
+    border-color: rgb(51, 51, 51);
+    font-size: 17px;
+}
+
+.ui-select-placeholder {
+    padding: 12px 10px;
+    display: block;
+}
+
+.ui-select-container .btn {
+    padding: 0;
+}
+
+.ui-select-container .country-currency {
+    /*padding: 0;*/
+    /*height: 48px;*/
+    border: none;
+}
+
+.ui-select-container .country-currency.chosen {
+    height: 48px;
+    border: none;
+}
+
+.ui-select-container .country-currency .image-country-wrap {
+    width: 34px;
+}
+
+.ui-select-container input.form-control::placeholder {
+    font-size: 17px;
+}
+
+.dropdown-menu {
+    min-width: auto;
+}
+
+.ui-select-bootstrap .ui-select-choices-row > span {
+    padding: 3px 10px;
+}
+
+.ui-select-bootstrap .ui-select-match-text {
+    padding-right: 0;
+    height: 100%;
+}
+
+.ui-select-bootstrap .ui-select-match-text span {
+    width: auto;
+}
+
+.ui-select-bootstrap .ui-select-toggle > .caret {
+    right: 3px;
+}
+

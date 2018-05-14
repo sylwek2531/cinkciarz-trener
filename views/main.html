@@ -1,0 +1,46 @@
+<div id="container">
+    <div class="navbar">
+        <div class="text-center">
+            <h3>wymiana walut</h3>
+        </div>
+    </div>
+    <div class="input-group ">
+        <input type="number" id="startValue" class="form-control main-accept" min="0" ng-model="mainCtrl.startValue"
+               placeholder="Wpisz kwote:">
+        <div class="input-group-btn">
+            <button id="acceptButton" type="button" ng-model="mainCtrl.acceptButton" class="btn btn-default main-accept"
+                    ng-disabled="mainCtrl.startValue == 0 || mainCtrl.startValue == null"
+                    ng-click=" mainCtrl.acceptValue()">Zatwierdź <span></span></button>
+        </div>
+    </div>
+    <div class="main-button-menu">
+        <a class="btn-menu" href="#/wallet">
+            <div class="hexagon">
+                <img src="../img/wallet.svg" alt="">
+
+            </div>
+            <div class="btn-hexagon">stan portfela</div>
+        </a>
+        <a class="btn-menu" href="#/exchange">
+            <div class="hexagon">
+                <img src="../img/currency-rates.svg" alt="">
+
+            </div>
+            <div class="btn-hexagon">kurs walut</div>
+        </a>
+        <a class="btn-menu" href="#/buy">
+            <div class="hexagon">
+                <img src="../img/euro.svg" alt="">
+
+            </div>
+            <div class="btn-hexagon">kupno</div>
+        </a>
+        <a class="btn-menu" href="#/sale">
+            <div class="hexagon">
+                <img src="../img/dollar.svg" alt="">
+
+            </div>
+            <div class="btn-hexagon">sprzedaż</div>
+        </a>
+    </div>
+</div>
